@@ -24,3 +24,4 @@
 *.res binary
 *.RES binary
 *.suo binary
+* text=auto
