@@ -2,11 +2,21 @@
 
 version 4.0
 	* Closed #79 - Updated CorString.Compare and CorString.CompareEx default comparison to StringComparison.CurrentCulture.
-	* Closed #65 - SHA1CryptoServiceProvider.SHA1_ComputeHash method should be private.
-	* Closed #64 - ExceptionBase.ToString should return type String.
-	* Closed #61 - CorString.CompareOrdinalEx parameter Length should be declared as Long.
-	* Closed #60 - CorString.CompareCulturalEx parameter Length should be declared as Long.
+	* Fixed #65 - SHA1CryptoServiceProvider.SHA1_ComputeHash method should be private.
+	* Fixed #64 - ExceptionBase.ToString should return type String.
+	* Fixed #61 - CorString.CompareOrdinalEx parameter Length should be declared as Long.
+	* Fixed #60 - CorString.CompareCulturalEx parameter Length should be declared as Long.
 	* Closed #27 - Changed BinaryReader.ReadChar return type to Integer.
+	* Closed #48 - Hashtable.GetEnumerator return type should be IDictionaryEnumerator.
+	* Closed #32 - NewStrings supports additional datatypes by using Object.ToString for non-string values.
+	* Fixed #46 - Allow CorString.Split to have optional delimiter that would default to splitting on whitespaces.
+	* Added NewBigIntegers contstructor. This closes #81.
+	* Fixed #43 - Removed the Comparer parameter from the NewArrayList constructor method.
+	* Added AppendAllLines to File class. This closes #44.
+	* Added ReadLines to File class. This closes #94.
+	* Added LeaveOpen parameter in BinaryWriter constructor. This closes #28.
+	* Fixed #59 - Changed NewSafeHandle parameter ZeroIsInvalid to explicit boolean type.
+	* Fixed #104 - Was not correctly checking for EOF when calling BinaryReader.ReadChar method.
 
 version 3.2
 	* Optimize StringBuilder.AppendChar for Release build.
